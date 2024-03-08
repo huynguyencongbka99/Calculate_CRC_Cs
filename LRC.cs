@@ -21,7 +21,7 @@ class Program
 
         foreach (byte b in data)
         {
-            lrc ^= b;
+            lrc += b;
         }
 
         lrc = (byte)((lrc ^ 0xFF) + 1); // Take two's complement
